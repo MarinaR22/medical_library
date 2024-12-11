@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +28,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
+Route::get('events', [Controllers\EventController::class, 'getAll']);
+Route::get('event/{event}', [Controllers\EventController::class, 'getOne']);
+Route::get('articles', [Controllers\MaintextController::class,'getAll']);
+Route::get('{url?}', [Controllers\MaintextController::class,'getUrl']);
 require __DIR__.'/auth.php';

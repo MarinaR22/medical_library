@@ -9,6 +9,9 @@ class MaintextController extends Controller
 {
     //
     public function getUrl ($url = null) {
+        if(!$url){
+            $url='/';
+        }
 $maintext = Maintext::where('url', $url)->first();
 
 return view('article', compact('maintext'));

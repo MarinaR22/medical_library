@@ -11,11 +11,11 @@
   <title>Главная</title>
   <!-- Название вкладки -->
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="js/flipper.js"></script>
-  <script src="js/spoiler.js"></script>
-  <link href="css/carusel.css" rel="stylesheet" />
-  <script src="js/carusel.js" ></script>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="/js/flipper.js"></script>
+  <script src="/js/spoiler.js"></script>
+  <link href="/css/carusel.css" rel="stylesheet" />
+  <script src="/js/carusel.js" ></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 <body>
 
   <header>
-  <div class="flex w-full md:max-w-xl mx-4 rounded shadow">
+  <div class="flex w-full md:max-w-xl mx-4 rounded shadow menu">
   <a href="/" aria-current="false"
         class="w-full flex justify-center font-medium rounded-l px-5 py-2 border bg-gray-900 text-white border-gray-200 hover:bg-gray-700">
         Главная

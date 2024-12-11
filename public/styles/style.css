@@ -80,7 +80,7 @@ footer {
   text-align: center;
 }
 
-a:visited {
+.menu a:visited {
   color: rgb(217, 201, 232);
 }
 
