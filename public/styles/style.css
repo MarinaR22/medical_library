@@ -1,0 +1,168 @@
+h1 {
+  text-align: center;
+  color: rgb(58, 4, 82);
+  font-family: Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(58, 4, 82);
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(173, 230, 172);
+}
+
+p {
+  font-family: Verdana, sans-serif;
+}
+
+ol {
+  font-family: Verdana, sans-serif;
+}
+
+ul {
+  font-family: Verdana, sans-serif;
+}
+
+table {
+  font-family: Verdana, sans-serif;
+}
+
+/* table, th, td {border: 1px solid black;} */
+
+/* table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;} */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table {
+  border-spacing: 15px;
+}
+
+.important {
+  color: rgb(2, 65, 27);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7%;
+  width: 400px;
+  height: 300px;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;  
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+#only1 {
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+}
+
+a:visited {
+  color: rgb(217, 201, 232);
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  clear: both;
+  height: 60px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  margin: 17px 20px;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+nav ul li a {
+  color: rgb(58, 4, 82);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-color: rgb(230, 172, 181);
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+  body {
+    background-color: rgb(189, 172, 230);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* DESKTOP */
+}
+
+img.cover {
+  display: none;
+}
+
+.description {
+  display: none
+}
+
+
+
+.carusel{
+  display: flex;
+}
+
+.carusel div{
+  width: 300px;
+}
+.carusel div{
+  transition: all 1s;
+}
+
+.carusel img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.carusel .block1,
+.carusel .block5{
+  width: 0;
+  overflow: hidden;
+}
+
+.face{
+  transition-duration: 3s;
+}
