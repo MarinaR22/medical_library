@@ -9,7 +9,7 @@ class EventController extends Controller
 
 
         public function getAll () {
-$events = Event::orderBy('id', 'DESC')->get();
+$events = Event::orderBy('id', 'ASC')->get();
 return view('events', compact('events'));
         }
         public function getOne (Event $event) {

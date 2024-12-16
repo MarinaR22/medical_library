@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('events', [Controllers\EventController::class, 'getAll']);
 Route::get('event/{event}', [Controllers\EventController::class, 'getOne']);
+Route::post('order/{event}', [Controllers\OrderController::class, 'postindex']);
 Route::get('articles', [Controllers\MaintextController::class,'getAll']);
 Route::get('{url?}', [Controllers\MaintextController::class,'getUrl']);
 require __DIR__.'/auth.php';
