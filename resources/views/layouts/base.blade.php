@@ -77,8 +77,8 @@
             </main>
 
   <footer class="pt-10 pb-10 mt-5 border-t-2">            
-    <p>Copyright © <time datetime="2023">2023</time>
-      Научная библиотека &quot;Science&quot; </p>
+    <p>Copyright © <time>2023-2025</time>
+      Научная библиотека &quot;Medical Science&quot; </p>
     <address>Минск, Республика Беларусь</address>
   </footer>
 
