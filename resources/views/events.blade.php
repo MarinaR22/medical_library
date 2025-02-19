@@ -10,40 +10,51 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
             <div class="bg-white">
-    <div class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+    <div class="pl-7 pr-7">
 
 
-
-        <div class="mt-20">
-            <ul class="">
-
-
-                @foreach ($events as $event)
-                <li class="text-left mb-10">
-                    <div class="flex flex-row items-start">
-                        <div class="flex flex-col items-center justify-center mr-5">
-                            <div
-                                class="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
-                                {{$event->id}}
-                            </div>
-                        </div>
-                        <div class="bg-gray-100 p-5 pb-10 ">
-                            <h4 class="text-lg leading-6 font-semibold text-gray-900">
-                            <a href="{{asset('event/'.$event->id)}}" class="text-sky-700 hover:underline mt-2">{{$event->name}} 
-                    </a>
-                            </h4>
-                            <p class="mt-2 text-base leading-6 text-gray-500">
+    <table class="w-full mt-7 mb-7">
+                    <thead class="bg-white border-b">
+                        <tr>
+                            <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                               &nbsp;
+                            </th>
+                            <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                Название мероприятия
+                            </th>
+                            <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                Дата проведения
+                            </th>
+                            <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                Начало
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach ($events as $event)
+                        <tr class="bg-gray-100 border-b">
+                            <td width="200px" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                             <a href="{{asset('event/'.$event->id)}}" class="text-sky-700 hover:underline mt-2">
-                    
-                    Начало мероприятия {{$event->date_start}} {{$event->time_start}}</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                   
-                   @endforeach
-            </ul>
-        </div>
+                            <img src="{{asset($event->picture)}}" width="200px" alt="">
+</a>
+                            </td>
+                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            <a href="{{asset('event/'.$event->id)}}" class="text-sky-700 hover:underline mt-2">
+                            {{$event->name}}
+</a>
+                            </td>
+                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {{$event->date_start}}
+                            </td>
+                            <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {{$event->time_start}}
+                            </td>
+                        </tr>
+                        @endforeach
+
+                    </tbody>
+                </table>
+
 
     </div>
 </div>

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function onHighlighterTrClick(evt) {
         const trWhichWeClick = evt.currentTarget;
         if (trWhichWeClick.style.background == 'none') {
-            trWhichWeClick.style.background = 'red'
+            trWhichWeClick.style.background = 'lightgray'
         } else {
             trWhichWeClick.style.background = 'none'
         }
